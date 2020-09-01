@@ -22,7 +22,7 @@ class PipelineStack(core.Stack):
         action_name='GitHub',
         output=source_artifact,
         oauth_token=core.SecretValue.secrets_manager('github-token'),
-        owner='venkatayellagsaawscomet',
+        #owner='venkatayellagsaawscomet',
         repo='https://github.com/venkatayellagsaawscomet/cdk-pipelines-demo-python.git',
         trigger=cpactions.GitHubTrigger.POLL),
 
