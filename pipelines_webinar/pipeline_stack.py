@@ -2,6 +2,8 @@ from aws_cdk import core
 from aws_cdk import aws_codepipeline as codepipeline
 from aws_cdk import aws_codepipeline_actions as cpactions
 from aws_cdk import pipelines
+import aws_cdk.aws_codepipeline as codepipeline
+import aws_cdk.aws_codepipeline_actions as codepipeline_actions
 
 from .webservice_stage import WebServiceStage
 
