@@ -1,9 +1,10 @@
 from aws_cdk import core
 from aws_cdk import aws_codepipeline as codepipeline
-from aws_cdk import aws_codepipeline_actions as cpactions
-from aws_cdk import pipelines
+# Example automatically generated. See https://github.com/aws/jsii/issues/826
 import aws_cdk.aws_codepipeline as codepipeline
 import aws_cdk.aws_codepipeline_actions as codepipeline_actions
+from aws_cdk import aws_codepipeline_actions as cpactions
+from aws_cdk import pipelines
 
 from .webservice_stage import WebServiceStage
 
@@ -24,7 +25,7 @@ class PipelineStack(core.Stack):
         action_name='GitHub',
         output=source_artifact,
         oauth_token=core.SecretValue.secrets_manager('github-token'),
-        #owner='venkatayellagsaawscomet',
+        owner='',
         repo='https://github.com/venkatayellagsaawscomet/cdk-pipelines-demo-python.git',
         trigger=cpactions.GitHubTrigger.POLL),
 
